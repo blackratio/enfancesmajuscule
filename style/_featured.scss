@@ -1,0 +1,52 @@
+#featured {
+	position: relative;
+	text-align: center;
+	background-image: url(img/feature_bck.png);
+	background-size: cover;
+	background-attachment:fixed;
+
+   .infos_head {
+   	margin-bottom: 30px;
+   }
+   .infos_content {
+   	width: 500px;
+   	margin: 0 auto;
+   	text-align: center;
+      h2 {
+         font-size: 20px;
+         font-weight: lighter;
+         line-height: 27px;
+         //background-color: rgba(254, 254, 254, 0.2);
+         padding: 20px;
+      }
+      .btn_actions {
+         margin-top: 20px;
+         a {
+         	padding: 10px 20px;
+         	background-color: red;
+         	color: #fff;
+         }
+      }
+   }
+   .timeto {
+   	position: absolute;
+   	//width: 300px;
+      //padding: 20px;
+   	//margin-left: -150px;
+   	text-align: center;
+   	color: #fff;
+   	//background-color: $strongBackground;
+   	left: 0;
+   	bottom: 30px;
+   }
+   .timeto span {
+      display: block;
+      height: 80px;
+      width: 80px;
+      line-height: 80px;
+      border-radius: 50%;
+      color: #fff;
+   	background-color: $mainHightColor;
+   	font-size: 2em;
+   }
+}
