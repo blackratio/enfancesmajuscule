@@ -1,18 +1,16 @@
 /*
-Theme Name: Enfance Majuscule
-Theme URI: https://wordpress.org/themes/twentysixteen/
+Theme Name: Thème Enfance Majuscule
 Author: David Wieczorek
-Author URI: https://wordpress.org/
 Description: Enfance Majuscule, course majuscule @
 Version: 1.0
 License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: black, blue, gray, red, white, yellow, dark, light, one-column, two-columns, right-sidebar, fixed-layout, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+Tags: Enfance majuscule
 Text Domain: enfancemajuscule
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+
 
 
 /**
@@ -3712,10 +3710,19 @@ p > video {
 }
 
 $strongBackground: #151515;
-$mainHightColor: #43e779;
+$mainHightColor: rgba(34, 167, 240, 1);
+$mainMediumColor: rgba(239, 72, 54, 1);
+$green: rgba(0, 177, 106, 1);
+$orange: rgba(248, 148, 6, 1);
+$yellow: rgba(247, 202, 24, 1);
+$gray: rgba(218, 223, 225, 1);
 
 body {
    font-family: 'Open Sans', sans-serif !important;
+}
+body:after, body:before {
+   content: inherit !important;
+	display: none !important;
 }
 h2 {
    font-size: 24px;
@@ -3747,25 +3754,44 @@ h5 {
 }
 .title_section {
    margin: 0 0 60px 0;
+	h2 {
+		//font-family: 'Slabo 27px', serif;
+		font-family: 'Pacifico', cursive;
+		font-size: 2.9em;
+	}
    h3 {
       line-height: 23px;
+		font-family: 'Slabo 27px', serif;
    }
 }
 
+@import "style/mainmenu";
 @import "style/featured";
 @import "style/baseline";
 @import "style/general";
 @import "style/parrains";
+@import "style/map";
+@import "style/network";
+@import "style/contact";
 
+.right {
+	float: right;
+	display: inline;
+}
+.left {
+	float: left;
+	display: inline;
+}
 
 #assos_videos {
 	background-color: $strongBackground;
-	padding: 100px 0 0 0;
 	text-align: center;
+	color: #fff;
 }
 #assos_videos iframe {
 	margin-bottom: 0;
 }
+
 #map {
-   height: 500px;
+   height: 700px;
 }

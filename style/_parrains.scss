@@ -1,35 +1,47 @@
 #parrains {
 	background-color: #fff;
-	padding: 40px;
 	text-align: center;
-
-   .parrains_item {
-   	text-align: center;
-   	float: left;
-   	width: 25%;
-
-      span {
-      	display: inline-block;
-      	width: 150px;
-      	height: 150px;
-      	border-radius: 50%;
-      	border: 5px solid #ddd;
-      	background-size: cover;
-      }
-      h5 {
-      	color: $mainHightColor;
-      }
-   }
-   .parrains_item:nth-child(1) span {
-   	background-image: url(img/Michel-Cimes.jpg);
-   }
-   .parrains_item:nth-child(2) span {
-   	background-image: url(img/Richard-Berry.jpg);
-   }
-   .parrains_item:nth-child(3) span {
-   	background-image: url(img/Laurence-ferrari.jpg);
-   }
-   .parrains_item:nth-child(4) span {
-   	background-image: url(img/Boris-Cyrulnik.jpg);
-   }
+	.parrains_item {
+		text-align: center;
+		float: left;
+		width: 25%;
+		> span {
+			display: inline-block;
+			width: 150px;
+			height: 150px;
+			border-radius: 50%;
+			border: 5px solid #ddd;
+			background-size: cover;
+			transition: 0.5s ease;
+		}
+		h5 {
+			font-size: 0.9em;
+			color: $green;
+		}
+		.network {
+			margin: 10px 0 15px 0;
+			a {
+				margin: 0 5px;
+				color: $gray;
+			}
+			a:hover {
+				color: $mainHightColor;
+			}
+		}
+	}
+	.parrains_item:nth-child(1) > span {
+		background-image: url(img/Michel-Cimes.jpg);
+	}
+	.parrains_item:nth-child(2) > span {
+		background-image: url(img/Richard-Berry.jpg);
+	}
+	.parrains_item:nth-child(3) > span {
+		background-image: url(img/Laurence-ferrari.jpg);
+	}
+	.parrains_item:nth-child(4) > span {
+		background-image: url(img/Boris-Cyrulnik.jpg);
+	}
+	.parrains_item > span:hover {
+		border: 8px solid $green;
+	}
 }

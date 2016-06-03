@@ -180,8 +180,46 @@
 		} );
 	}
 
+	function getTimeRemaining(endtime){
+	  var t = Date.parse(endtime) - Date.parse(new Date());
+	  var seconds = Math.floor( (t/1000) % 60 );
+	  var minutes = Math.floor( (t/1000/60) % 60 );
+	  var hours = Math.floor( (t/(1000*60*60)) % 24 );
+	  var days = Math.floor( t/(1000*60*60*24) );
+	  return {
+		 'total': t,
+		 'days': days,
+		 'hours': hours,
+		 'minutes': minutes,
+		 'seconds': seconds
+	  };
+	}
+
+	function initializeClock(id, endtime){
+	  var clock = document.getElementById(id);
+	  var timeinterval = setInterval(function(){
+		 var t = getTimeRemaining(endtime);
+		 /*clock.innerHTML = 'days: ' + t.days + '<br>' +
+								 'hours: '+ t.hours + '<br>' +
+								 'minutes: ' + t.minutes + '<br>' +
+								 'seconds: ' + t.seconds;*/
+		clock.innerHTML = t.days;
+		 if(t.total<=0){
+			clearInterval(timeinterval);
+		 }
+	  },1000);
+	}
+
 	$( document ).ready( function() {
 		body = $( document.body );
+
+		$('.scrollTo').click( function(event) {
+		   event.preventDefault();
+		   event.stopPropagation();
+		   var url = $(this).attr('href');
+		   var hash = url.substring(url.indexOf('#'));
+		   $('html, body').animate( { scrollTop:    $(hash).offset().top }, 750 );
+		});
 
 		$( window )
 			.on( 'load.twentysixteen', onResizeARIA )
@@ -197,9 +235,15 @@
 		belowEntryMetaClass( 'img.size-full' );
 		belowEntryMetaClass( 'blockquote.alignleft, blockquote.alignright' );
 
+		var deadline = '2016-11-13';
 
+		initializeClock('clockdiv', deadline);
+		getTimeRemaining(deadline).days
 
-		var map = L.map('map').setView([48.8666870 , 2.2459518], 16);
+		mapOptions = {
+			scrollWheelZoom: false
+		}
+		var map = L.map('map', mapOptions).setView([48.8666870 , 2.2459518], 16);
 
 		L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
 		    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'

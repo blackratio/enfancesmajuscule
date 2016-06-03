@@ -1,52 +1,92 @@
 #featured {
 	position: relative;
 	text-align: center;
-	background-image: url(img/feature_bck.png);
+	background-image: url(img/feature4_bck.jpg);
 	background-size: cover;
 	background-attachment:fixed;
+	padding-top: 100px;
+	padding-bottom: 80px;
+	.infos_head {
+		margin-bottom: 30px;
+	}
+	.infos_content {
+		width: 700px;
+		margin: 0 auto;
+		text-align: center;
+		.details {
+			text-align: center;
+			//padding: 20px;
+			//background-color: rgba(254, 254, 254, 0.3);
+			//border: 1px solid #fff;
+			margin-bottom: 50px;
+			span {
+				display: inline-block;
+				font-size: 2em;
+				font-weight: lighter;
+				margin: 0 30px;
+				height: 130px;
+				width: 130px;
+				line-height: 124px;
+				background-color: #fff;
+				color: #fff;
+			}
+			span:nth-child(1) {
+				background-color: $green;
+			}
+			span:nth-child(2) {
+				background-color: $orange;
+			}
+			span:nth-child(3) {
+				background-color: $mainHightColor;
+			}
+		}
+		h2 {
+			font-family: 'Pacifico', cursive;
+			margin-bottom: 85px;
+			font-weight: lighter;
+			font-size: 3em;
+			line-height: 37px;
+			color: $yellow;
+			//background-color: rgba(254, 254, 254, 0.2);
 
-   .infos_head {
-   	margin-bottom: 30px;
-   }
-   .infos_content {
-   	width: 500px;
-   	margin: 0 auto;
-   	text-align: center;
-      h2 {
-         font-size: 20px;
-         font-weight: lighter;
-         line-height: 27px;
-         //background-color: rgba(254, 254, 254, 0.2);
-         padding: 20px;
-      }
-      .btn_actions {
-         margin-top: 20px;
-         a {
-         	padding: 10px 20px;
-         	background-color: red;
-         	color: #fff;
-         }
-      }
-   }
-   .timeto {
-   	position: absolute;
-   	//width: 300px;
-      //padding: 20px;
-   	//margin-left: -150px;
-   	text-align: center;
-   	color: #fff;
-   	//background-color: $strongBackground;
-   	left: 0;
-   	bottom: 30px;
-   }
-   .timeto span {
-      display: block;
-      height: 80px;
-      width: 80px;
-      line-height: 80px;
-      border-radius: 50%;
-      color: #fff;
-   	background-color: $mainHightColor;
-   	font-size: 2em;
-   }
+		}
+		h3 {
+			/*padding: 20px;
+			background-color: rgba(254, 254, 254, 0.3);
+			border: 1px solid #fff;*/
+		}
+		.btn_actions {
+			margin-top: 60px;
+			a {
+				padding: 15px 30px;
+				background-color: $mainMediumColor;
+				color: #fff;
+			}
+		}
+	}
+	.timeto {
+		display: inline-block;
+		padding: 15px;
+		text-align: center;
+		margin-top: 80px;
+		color: #fff;
+		h4 {
+			border: 2px solid #fff;
+			padding: 15px;
+		}
+	}
+	h3 {
+		span {
+			font-size: 4em;
+			color: $mainHightColor;
+
+		}
+	}
+	.timeto #clockdiv {
+		font-family: 'Pacifico', cursive;
+		display: inline-block;
+		margin: 0 8px;
+		color: $mainMediumColor;
+		font-size: 1.5em;
+	}
 }

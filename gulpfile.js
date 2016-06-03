@@ -7,9 +7,9 @@ var notify = require('gulp-notify');
 var plumber = require('gulp-plumber');
 var browserSync = require('browser-sync').create();
 var babel = require("gulp-babel");
-var karmaServer = require('karma').Server;
+//var karmaServer = require('karma').Server;
 var source = require('vinyl-source-stream');
-var browserify = require('browserify');
+//var browserify = require('browserify');
 var sassdoc = require('sassdoc');
 var sourcemaps = require('gulp-sourcemaps');
 var postcss = require('gulp-postcss');
@@ -141,8 +141,9 @@ gulp.task('sassdoc', function() {
 gulp.task('dev', function() {
    browserSync.init({
       //server: "./index.php"
-      proxy: "localhost:8888/wordpress",
-      injectChanges: true
+      proxy: "localhost:8888/enfance",
+      injectChanges: true,
+      port: 3005,
    });
 
    gulp.watch('**/*.scss', ['sass']).on('change', browserSync.reload);

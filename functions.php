@@ -184,6 +184,14 @@ function twentysixteen_widgets_init() {
 }
 add_action( 'widgets_init', 'twentysixteen_widgets_init' );
 
+
+function five_posts_on_homepage( $query ) {
+    if ( $query->is_home() && $query->is_main_query() ) {
+        $query->set( 'posts_per_page', 2 );
+    }
+}
+add_action( 'pre_get_posts', 'five_posts_on_homepage' );
+
 if ( ! function_exists( 'twentysixteen_fonts_url' ) ) :
 /**
  * Register Google fonts for Twenty Sixteen.
