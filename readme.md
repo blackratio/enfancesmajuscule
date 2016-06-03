@@ -7,6 +7,7 @@ License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: Enfance Majuscule
 
+
 == Description ==
 Enfance Majuscule Wordpress Theme.
 
