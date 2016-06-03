@@ -1,0 +1,24 @@
+#main_menu {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: 10000;
+   background-color: rgba(254, 254, 254, 0.8);
+   .wrapper_center {
+      padding: 10px 0;
+   }
+   img {
+      height: 60px;
+   }
+   a {
+      font-family: 'Slabo 27px', serif;
+      height: 60px;
+      line-height: 60px;
+      color: $mainHightColor;
+      margin-left: 15px;
+   }
+   a:hover {
+      color: $mainMediumColor;
+   }
+}

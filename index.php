@@ -16,17 +16,25 @@
 
 get_header(); ?>
 
+<?php get_template_part( 'home/main_menu', get_post_format() ); ?>
+
 <?php get_template_part( 'home/featured_content', get_post_format() ); ?>
 
 <?php get_template_part( 'home/assos_infos_baseline', get_post_format() ); ?>
 
-<?php get_template_part( 'home/assos_infos_general', get_post_format() ); ?>
-
 <?php get_template_part( 'home/featured_videos', get_post_format() ); ?>
+
+<?php get_template_part( 'home/assos_network', get_post_format() ); ?>
 
 <?php get_template_part( 'home/parrains', get_post_format() ); ?>
 
+<?php get_template_part( 'home/assos_infos_general', get_post_format() ); ?>
+
 <?php get_template_part( 'home/map', get_post_format() ); ?>
+
+<?php get_template_part( 'home/assos_contact', get_post_format() ); ?>
+
+<?php get_template_part( 'home/assos_network', get_post_format() ); ?>
 
 <!--?php get_sidebar(); ?-->
 <?php get_footer(); ?>

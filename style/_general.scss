@@ -1,42 +1,128 @@
 #assos_general {
 	position: relative;
-	background-color: #fff;
-   h2 {
-      color: $mainHightColor;
-   }
-   .title_section {
-   	width: 33%;
+	background-color: $gray;
+	background-image: url(img/parc2_full.jpg);
+	background-size: cover;
+	background-attachment:fixed;
+	color: #fff;
+	text-align: center;
+   .accroche_section {
+		position: absolute;
+		top: 390px;
+		left: 45%;
+   	width: 25%;
    	text-align: center;
-   	padding-bottom: 80px;
-   	margin: 0 auto;
+		border: 8px solid #fff;
+		padding: 10px;
+		background-color: rgba(0, 0, 0, 0.3);
+		h2 {
+			color: #fff;
+
+
+         //background-color: $mainMediumColor;
+			font-size: 1.6em;
+			margin-bottom: 10px;
+	   }
    }
+	.clear {
+		height: 500px;
+	}
    .left_infos {
-   	float: left;
-   	width: 24%;
+   	position: absolute;
+		top:310px;
+		left: 0;
+   	width: 40%;
    	text-align: center;
    	padding: 20px;
-      border: 2px solid #eee;
+		color: #fff;
+      background-color: $mainHightColor;
+		font-weight: lighter;
+		h4 {
+			font-weight: lighter;
+		}
    }
    .center_infos {
    	position: absolute;
-   	bottom: 40px;
+   	bottom: -40px;
    	width: 50%;
    	left: 50%;
    	margin-left: -25%;
-   	padding: 130px 20px;
+   	padding: 40px 20px;
    	text-align: center;
-   	margin-bottom: -80px;
-   	background-image: url(img/parc_bck.jpg);
-   	background-size: cover;
-      h2, h3 {
+   	//background-image: url(img/parc_bck.jpg);
+   	//background-size: cover;
+		//background-color: rgba(254, 254, 254, 0.5);
+		background-color: rgba(0, 0, 0, 0.5);
+		border: 4px solid $yellow;
+		h2 {
+			color: $yellow;
+		}
+      h3 {
          color: #fff;
       }
    }
    .right_infos {
-   	float: right;
+		position: absolute;
+   	top: 100px;
+		right: 0;
    	padding: 20px;
+		margin-bottom: 50px;
    	width: 24%;
    	text-align: center;
       background-color: $strongBackground;
    }
+	#home_blogpost {
+		h3 {
+			margin-bottom: 15px;
+		}
+		article:last-child {
+			margin-bottom: 0;
+		}
+		article {
+			margin-bottom: 20px;
+			padding: 10px;
+			background-color: #222;
+			.meta {
+				text-align: left;
+				.byline {
+					display: block;
+				}
+				.posted-on {
+					margin-bottom: 0;
+				}
+				span {
+					display: inline-block;
+					line-height: 0;
+					a {
+						font-size: 0.8em;
+						color: #999;
+					}
+					.avatar {
+						display: none;
+					}
+				}
+				.comments-link {
+					display: none;
+				}
+			}
+			.post_header {
+				h2 {
+					text-align: left;
+					font-size: 0.9em;
+					a {
+						color: $mainMediumColor;
+					}
+				}
+			}
+			.entry-summary {
+				margin-bottom: 0;
+			}
+			p {
+				font-size: 0.6em;
+				font-weight: lighter;
+				color: #fff;
+				text-align: left;
+			}
+		}
+	}
 }
