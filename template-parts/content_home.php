@@ -10,7 +10,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="meta">
-		<?php twentysixteen_entry_meta(); ?>
+
 		<!--?php
 			edit_post_link(
 				sprintf(
@@ -23,15 +23,24 @@
 			);
 		?-->
 	</div>
-	<div class="post_header">
+	<div class="post_header clear">
 		<?php if ( is_sticky() && is_home() && ! is_paged() ) : ?>
 			<span class="sticky-post"><?php _e( 'Featured', 'twentysixteen' ); ?></span>
 		<?php endif; ?>
+		<div class="left thumb">
+			<?php twentysixteen_post_thumbnail(); ?>
+		</div>
+		<div class="left content">
+			<div class="meta">
+				<?php twentysixteen_entry_meta(); ?>
+			</div>
+			<?php the_title( sprintf( '<h2><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+			<?php twentysixteen_excerpt(); ?>
+		</div>
 
-		<?php the_title( sprintf( '<h2><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 	</div><!-- .entry-header -->
 
-	<?php twentysixteen_excerpt(); ?>
 
-	<?php twentysixteen_post_thumbnail(); ?>
+
+
 </article><!-- #post-## -->

@@ -4,13 +4,13 @@
 	background-image: url(img/feature6_bck.jpeg);
 	background-size: cover;
 	background-attachment:fixed;
-	padding-top: 100px;
+	padding-top: 20px;
 	padding-bottom: 80px;
 	.infos_head {
 		margin-bottom: 30px;
 	}
 	.infos_content {
-		width: 700px;
+		width: 800px;
 		margin: 0 auto;
 		text-align: center;
 		.details {
@@ -22,39 +22,19 @@
 			img {
 				width: 200px;
 			}
-			span {
-				display: inline-block;
-				font-size: 2em;
-				font-weight: lighter;
-				margin: 0 30px;
-				height: 130px;
-				width: 130px;
-				line-height: 124px;
-				background-color: #fff;
-				color: #fff;
-			}
-			span:nth-child(1) {
-				background-color: $green;
-			}
-			span:nth-child(2) {
-				background-color: $orange;
-			}
-			span:nth-child(3) {
-				background-color: $mainHightColor;
-			}
 		}
 		h2 {
 			font-family: 'Pacifico', cursive;
-			margin-bottom: 85px;
+			margin-bottom: 35px;
 			font-weight: lighter;
 			font-size: 3em;
 			line-height: 37px;
-			color: $yellow;
+			color: $orange;
 			//background-color: rgba(254, 254, 254, 0.2);
 
 		}
 		h3 {
-			
+
 			/*padding: 20px;
 			background-color: rgba(254, 254, 254, 0.3);
 			border: 1px solid #fff;*/
@@ -73,10 +53,19 @@
 		padding: 15px;
 		text-align: center;
 		margin-top: 80px;
-		color: #222;
+		color: #fff;
 		h4 {
 			border: 2px solid #fff;
-			padding: 15px;
+			padding: 5px;
+		}
+		#clockdiv {
+			//font-family: 'Pacifico', cursive;
+			font-family: 'Lato', sans-serif;
+			display: inline-block;
+			margin: 0 8px;
+			//background-color: $mainMediumColor;
+			color: #fff;
+			font-size: 1.5em;
 		}
 	}
 	h3 {
@@ -85,12 +74,5 @@
 			color: $mainHightColor;
 
 		}
-	}
-	.timeto #clockdiv {
-		font-family: 'Pacifico', cursive;
-		display: inline-block;
-		margin: 0 8px;
-		color: $mainMediumColor;
-		font-size: 1.5em;
 	}
 }
