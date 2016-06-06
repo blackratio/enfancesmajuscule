@@ -1,0 +1,49 @@
+#assos_inscriptions {
+   text-align: center;
+   background-color: $gray;
+   .inscription {
+      padding: 20px;
+      width: 32%;
+      margin: 0 1% 0 0;
+      h2 {
+         display: inline-block;
+         margin-bottom: 20px;
+         padding: 20px;
+         width: 150px;
+         height: 150px;
+         line-height: 90px;
+         border-radius: 50%;
+         border-width: 10px;
+         border-style: solid;
+         font-size: 2em;
+         background-color: #fff;
+      }
+      p {
+         font-size: 1em;
+         margin-bottom: 40px;
+         font-weight: light;
+      }
+      a {
+         width: 150px;
+         padding: 15px;
+         color: $mainMediumColor;
+         background-color: #fff;
+      }
+      a:hover {
+         background-color: $mainMediumColor;
+         color: #fff;
+      }
+   }
+   .i1 h2 {
+      color: $green;
+      border-color: $green;
+   }
+   .i2 h2 {
+      color: $mainHightColor;
+      border-color: $mainHightColor;
+   }
+   .i3 h2 {
+      color: $mainMediumColor;
+      border-color: $mainMediumColor;
+   }
+}

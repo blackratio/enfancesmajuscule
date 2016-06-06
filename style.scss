@@ -2701,7 +2701,7 @@ p > video {
  * 14.1 - >= 710px
  */
 
-@media screen and (min-width: 44.375em) {
+@media screen and (max-width: 44.375em) {
 	body:not(.custom-background-image):before,
 	body:not(.custom-background-image):after {
 		background: inherit;
@@ -2712,6 +2712,38 @@ p > video {
 		position: fixed;
 		width: 100%;
 		z-index: 99;
+	}
+
+	.wrapper_center {
+		width: 100%;
+		padding: 40px !important;
+	}
+
+	#main_menu {
+		text-align: center;
+		.wrapper_center {
+			padding: 0 !important;
+		}
+		a.left {
+			display: block;
+			float: none;
+			text-align: center;
+		}
+		a.right {
+			display: inline-block;
+			float: none;
+			text-align: center;
+		}
+	}
+	#parrains {
+		.clear {
+			text-align: center;
+		}
+		.parrains_item {
+			float: none !important;
+			display: inline-block;
+			width: 100% !important;
+		}
 	}
 
 	body:not(.custom-background-image):before {
@@ -3374,6 +3406,11 @@ p > video {
 	.site-header {
 
 	}
+	#main_menu {
+		a {
+			display: block;
+		}
+	}
 
 	.site-branding,
 	.site-header-menu,
@@ -3772,6 +3809,7 @@ h5 {
 @import "style/parrains";
 @import "style/map";
 @import "style/network";
+@import "style/inscription";
 @import "style/contact";
 
 .right {

@@ -11,15 +11,13 @@
          </div-->
          <div class="infos_content">
             <div class="details">
-               <!--span>1km</span>
-               <span>7km</span>
-               <span>14km</span-->
-               <h2>13<br>Novembre<br>2016</h2>
+               <img src="<?php bloginfo('template_directory'); ?>/img/logo_course.png"/>
+               <h2>13 Novembre 2016</h2>
                <h3>Participez à la première course pour les <b>droits de l’enfant.</b><br>En marchant ou à petites foulées, pour une boucle d’un petit kilomètre renouvelable à l’envie.<br>En participant, faites avancer cette belle cause de quelques pas.</h3>
             </div>
 
             <div class="btn_actions clear">
-               <a href="#">Insciption</a>
+               <a class="scrollTo" href="#assos_inscriptions">Insciption</a>
             </div>
          </div>
       </div>

@@ -32,6 +32,8 @@ get_header(); ?>
 
 <?php get_template_part( 'home/map', get_post_format() ); ?>
 
+<?php get_template_part( 'home/assos_inscriptions', get_post_format() ); ?>
+
 <?php get_template_part( 'home/assos_contact', get_post_format() ); ?>
 
 <?php get_template_part( 'home/assos_network', get_post_format() ); ?>
