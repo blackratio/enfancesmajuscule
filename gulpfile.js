@@ -141,7 +141,7 @@ gulp.task('sassdoc', function() {
 gulp.task('dev', function() {
    browserSync.init({
       //server: "./index.php"
-      proxy: "localhost:8888/enfance",
+      proxy: "localhost:8888/wordpress",
       injectChanges: true,
       port: 3005,
    });

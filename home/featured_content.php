@@ -1,5 +1,6 @@
 
 <div id="featured">
+
    <div class="wrapper_center">
       <div class="clear">
          <div class="logo left">
