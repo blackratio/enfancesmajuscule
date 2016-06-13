@@ -5,8 +5,8 @@
          <h3>Découvrez le parcours de la course dans un lieu exeptionnel</h3>
       </div>
       <div class="center_infos">
-         <h2>Au Parc de Rothschild</h2>
-         <h4>A Boulogne-Billancourt (92100), dans le magnifique parc Edmond de Rothschild</h4>
+         <h2>Parc de Rothschild</h2>
+         <h4>Boulogne-Billancourt (92100)</h4>
       </div>
       <div id="map"></div>
    </div>

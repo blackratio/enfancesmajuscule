@@ -1,0 +1,16 @@
+// BUTTOn
+.btn_actions {
+   margin-top: 40px;
+}
+.btn {
+   display: inline-block;
+   padding: 10px;
+   background-color: $mainMediumColor;
+   transition: 0.5s ease;
+   color: #fff;
+}
+
+.btn:hover {
+   background-color: $mainHightColor;
+   color: #fff;
+}

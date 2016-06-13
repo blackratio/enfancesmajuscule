@@ -49,6 +49,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
  */
 
 
+
 /**
  * 1.0 - Normalize
  *
@@ -3746,6 +3747,11 @@ p > video {
 	}
 }
 
+@font-face {
+    font-family: "arual";
+    src: url('font/Arual.ttf');
+}
+
 $strongBackground: #151515;
 $mainHightColor: rgba(34, 167, 240, 1);
 $mainMediumColor: rgba(239, 72, 54, 1);
@@ -3753,6 +3759,10 @@ $green: rgba(0, 177, 106, 1);
 $orange: rgba(248, 148, 6, 1);
 $yellow: rgba(247, 202, 24, 1);
 $gray: rgba(218, 223, 225, 1);
+$pourquoi: #FF0000;
+$ou: #00B9DB;
+$quand: #EDED00;
+$comment: #59D600;
 
 body {
    font-family: 'Open Sans', sans-serif !important;
@@ -3768,12 +3778,11 @@ h2 {
 }
 h3 {
    font-size: 20px;
-   font-weight: lighter;;
-   font-style: italic;
+   font-weight: lighter;
 }
 h4 {
    font-size: 17px;
-   font-weight: 400;
+   font-weight: lighter;
 }
 h5 {
    font-size: 15px;
@@ -3794,20 +3803,25 @@ h5 {
    margin: 0 0 90px 0;
 	h2 {
 		//font-family: 'Slabo 27px', serif;
-		font-family: 'Pacifico', cursive;
+		//font-family: 'Pacifico', cursive;
+		font-family: 'arual', serif;
+		font-weight: bold;
 		font-size: 2.9em;
 		display: inline-block;
 		padding: 10px 20px;
-		border: 1px solid #fff;
+		//border: 1px solid rgba(240,240,240, 0.4);
 		margin-bottom: 15px;
 	}
    h3 {
       line-height: 23px;
-		font-family: 'Slabo 27px', serif;
+		font-family: 'Oswald', sans-serif;
+		font-weight: lighter;
+		//font-family: 'Pacifico', cursive;
    }
 }
 
 @import "style/mainmenu";
+@import "style/component";
 @import "style/featured";
 @import "style/baseline";
 @import "style/general";
@@ -3827,7 +3841,9 @@ h5 {
 }
 
 #assos_videos {
-	background-color: $strongBackground;
+	background-image: url(img/bck2.jpg);
+	background-size: cover;
+	background-attachment:fixed;
 	text-align: center;
 	color: #fff;
 }

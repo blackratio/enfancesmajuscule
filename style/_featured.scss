@@ -1,78 +1,77 @@
 #featured {
 	position: relative;
 	text-align: center;
-	background-image: url(img/feature6_bck.jpeg);
+	background-image: url(img/feature_bck.png);
 	background-size: cover;
 	background-attachment:fixed;
-	padding-top: 20px;
 	padding-bottom: 80px;
-	.infos_head {
-		margin-bottom: 30px;
+	.wrapper_center {
+		padding-top: 150px;
 	}
-	.infos_content {
-		width: 800px;
-		margin: 0 auto;
+	.logo {
+		width: 500px;
 		text-align: center;
-		.details {
-			text-align: center;
-			//padding: 20px;
-			//background-color: rgba(254, 254, 254, 0.3);
-			//border: 1px solid #fff;
-			margin-bottom: 50px;
-			img {
-				width: 200px;
-			}
+		img {
+			width: 250px;
+			border-radius: 50%;
+			border: 15px solid rgba(34, 167, 240, 0.7);
 		}
 		h2 {
-			font-family: 'Pacifico', cursive;
-			margin-bottom: 35px;
-			font-weight: lighter;
+			margin-top: 20px;
+			font-size: 1.8em;
+			font-weight: bold;
+			font-family: 'arual', serif;
+		}
+	}
+	.infos {
+		width: 50%;
+		padding: 20px;
+		background-color: rgba(254, 254, 254, 0.4);
+	}
+	.km {
+		h4 {
+				font-family: 'Oswald', sans-serif;
+				font-weight: lighter;
+		}
+		text-align: center;
+		.item {
+			padding: 20px;
+			display: inline-block;
 			font-size: 3em;
-			line-height: 37px;
-			color: $orange;
-			//background-color: rgba(254, 254, 254, 0.2);
-
-		}
-		h3 {
-
-			/*padding: 20px;
-			background-color: rgba(254, 254, 254, 0.3);
-			border: 1px solid #fff;*/
-		}
-		.btn_actions {
-			margin-top: 60px;
-			a {
-				padding: 15px 30px;
-				background-color: $mainMediumColor;
-				color: #fff;
+			margin: 0 20px 0 0;
+			font-size: 6em;
+			// font-family: 'Lato', sans-serif;
+			letter-spacing: -3px;
+			font-weight: bold;
+			span {
+				font-family: 'Pacifico', cursive;
+				font-size: 0.4em;
 			}
+		}
+		.km1 {
+			color: $mainMediumColor;
+		}
+		.item:last-child {
+			margin-right: 0;
 		}
 	}
 	.timeto {
-		display: inline-block;
+		display: block;
 		padding: 15px;
 		text-align: center;
-		margin-top: 80px;
-		color: #fff;
-		h4 {
-			border: 2px solid #fff;
-			padding: 5px;
-		}
+		color: #444;
+		font-weight: lighter;
 		#clockdiv {
+			line-height: 45px;
+			font-weight: bolder;
+			letter-spacing: -3px;
 			//font-family: 'Pacifico', cursive;
-			font-family: 'Lato', sans-serif;
-			display: inline-block;
+			//font-family: 'Lato', sans-serif;
+			display: block;
 			margin: 0 8px;
 			//background-color: $mainMediumColor;
-			color: #fff;
-			font-size: 1.5em;
-		}
-	}
-	h3 {
-		span {
-			font-size: 4em;
-			color: $mainHightColor;
-
+			color: $mainMediumColor;
+			font-size: 3em;
 		}
 	}
 }
