@@ -4,52 +4,59 @@
 	background-image: url(img/feature_bck.png);
 	background-size: cover;
 	background-attachment:fixed;
-	padding-bottom: 80px;
 	.wrapper_center {
 		padding-top: 150px;
 	}
 	.logo {
-		width: 500px;
+		padding-top: 50px;
+		width: 50%;
 		text-align: center;
+		iframe {
+			//border: 7px solid #fff;
+			margin-bottom: 0;
+		}
 		img {
 			width: 250px;
 			border-radius: 50%;
-			border: 15px solid rgba(34, 167, 240, 0.7);
+			border: 15px solid rgba(254, 254, 254, 0.6);
+			margin-bottom: 60px;
 		}
-		h2 {
-			margin-top: 20px;
-			font-size: 1.8em;
-			font-weight: bold;
-			font-family: 'arual', serif;
-		}
+
 	}
 	.infos {
-		width: 50%;
+		margin-top: 30px;
+		width: 600px;
 		padding: 20px;
 		background-color: rgba(254, 254, 254, 0.4);
+		border: 1px solid rgba(254, 254, 254, 0.6);
+	}
+	h2 {
+		text-transform: uppercase;
+		margin-top: 20px;
+		font-size: 2.2em;
+		font-weight: bold;
+		font-family: 'arual', serif;
+	}
+	.link {
+		a span {
+			color: $laggoon;
+			font-size: 2em;
+		}
 	}
 	.km {
-		h4 {
-				font-family: 'Oswald', sans-serif;
-				font-weight: lighter;
-		}
 		text-align: center;
+		margin-bottom: 15px;
 		.item {
-			padding: 20px;
+			padding: 0 20px;
 			display: inline-block;
-			font-size: 3em;
-			margin: 0 20px 0 0;
-			font-size: 6em;
-			// font-family: 'Lato', sans-serif;
-			letter-spacing: -3px;
+			font-size: 4.8em;
+			color: $mainMediumColor;
+			letter-spacing: -1px;
 			font-weight: bold;
 			span {
-				font-family: 'Pacifico', cursive;
-				font-size: 0.4em;
+				font-size: 0.3em;
+				font-weight: 300;
 			}
-		}
-		.km1 {
-			color: $mainMediumColor;
 		}
 		.item:last-child {
 			margin-right: 0;
@@ -57,10 +64,12 @@
 	}
 	.timeto {
 		display: block;
-		padding: 15px;
+		padding: 15px 30px;
 		text-align: center;
-		color: #444;
 		font-weight: lighter;
+		//background-color: #fff;
+		text-transform: uppercase;
+		//color: $mainMediumColor;
 		#clockdiv {
 			line-height: 45px;
 			font-weight: bolder;

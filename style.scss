@@ -3751,6 +3751,9 @@ p > video {
     font-family: "arual";
     src: url('font/Arual.ttf');
 }
+body {
+	background-color: #fff !important;
+}
 
 $strongBackground: #151515;
 $mainHightColor: rgba(34, 167, 240, 1);
@@ -3758,11 +3761,12 @@ $mainMediumColor: rgba(239, 72, 54, 1);
 $green: rgba(0, 177, 106, 1);
 $orange: rgba(248, 148, 6, 1);
 $yellow: rgba(247, 202, 24, 1);
-$gray: rgba(218, 223, 225, 1);
+$gray: rgba(218, 223, 225, 0.6);
 $pourquoi: #FF0000;
 $ou: #00B9DB;
 $quand: #EDED00;
 $comment: #59D600;
+$laggoon: #2eccc8;
 
 body {
    font-family: 'Open Sans', sans-serif !important;
@@ -3793,7 +3797,7 @@ h5 {
 	position: relative;
 	max-width: 1350px;
 	margin: 0 auto;
-   padding: 40px 0 60px 0;
+   padding: 50px 0 80px 0;
 }
 .logo_head {
 	height: 80px;
@@ -3808,14 +3812,15 @@ h5 {
 		font-weight: bold;
 		font-size: 2.9em;
 		display: inline-block;
-		padding: 10px 20px;
+		//padding: 10px 20px;
 		//border: 1px solid rgba(240,240,240, 0.4);
-		margin-bottom: 15px;
+		margin-bottom: 10px;
 	}
    h3 {
       line-height: 23px;
+		letter-spacing: 2px;
 		font-family: 'Oswald', sans-serif;
-		font-weight: lighter;
+		font-weight: 300;
 		//font-family: 'Pacifico', cursive;
    }
 }
@@ -3848,7 +3853,7 @@ h5 {
 	color: #fff;
 }
 #assos_videos iframe {
-	border: 7px solid #fff;
+	//border: 10px solid rgba(240,240,240, 0.6);
 	margin-bottom: 0;
 }
 
