@@ -27,10 +27,10 @@
 		<?php if ( is_sticky() && is_home() && ! is_paged() ) : ?>
 			<span class="sticky-post"><?php _e( 'Featured', 'twentysixteen' ); ?></span>
 		<?php endif; ?>
-		<div class="left thumb">
+		<div class="thumb">
 			<?php twentysixteen_post_thumbnail(); ?>
 		</div>
-		<div class="left content">
+		<div class="content">
 			<div class="meta">
 				<?php twentysixteen_entry_meta(); ?>
 			</div>

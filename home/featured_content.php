@@ -1,10 +1,9 @@
 
 <div id="featured">
-
    <div class="wrapper_center">
       <div class="clear">
          <div class="logo left">
-            <img src="<?php bloginfo('template_directory'); ?>/img/logo_course.png"/>
+            <img src="<?php bloginfo('template_directory'); ?>/img/logo_course2.png"/>
             <div class="timeto">
                <h5><span id="clockdiv"></span>jours avant la course</h5>
             </div>
@@ -32,6 +31,5 @@
             </div>
          </div>
       </div>
-
    </div>
 </div>

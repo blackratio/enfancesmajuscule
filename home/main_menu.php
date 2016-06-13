@@ -5,7 +5,7 @@
       <a class="right scrollTo" href="#assos_inscriptions">Inscriptions</a>
       <a class="right scrollTo" href="#assos_map">Parcours</a>
       <a class="right scrollTo" href="#assos_general">Infos</a>
-      <a class="right scrollTo" href="#parrains">Parrains</a>
-      <a class="right scrollTo" href="#assos_videos">Videos</a>
+      <a class="right scrollTo" href="#parrains">Les parrains</a>
+      <a class="right scrollTo" href="#assos_videos">Medias</a>
    </div>
 </div>
