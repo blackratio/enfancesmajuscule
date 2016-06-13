@@ -8,7 +8,7 @@
          <div class="pourquoi general item1">
 
             <span class="fa fa-child"></span>
-            <h2>Pourquoi</h2>
+            <h2>Pourquoi ?</h2>
             <div class="content">
                <h3>LES DROITS DE L'ENFANT</h3>
                <h4>Une course pour l'anniversaire de la convention des droits de l'enfant du 20 novembre 1989.</h4>
@@ -17,7 +17,7 @@
          <div class="ou general item2">
 
             <span class="fa fa-map-marker"></span>
-            <h2>Ou</h2>
+            <h2>Ou ?</h2>
             <div class="content">
                <h3>AU PARC DE ROTHSCHILD</h3>
                <h4>A Boulogne-Billancourt, 92100, dans le magnifique parc Edmond de Rothschild.</h4>
@@ -26,7 +26,7 @@
          <div class="quand general item3">
 
             <span class="fa fa fa-calendar-check-o"></span>
-               <h2>Quand</h2>
+               <h2>Quand ?</h2>
             <div class="content">
                <h3>le 13 novembre 2016</h3>
                <h4>De 9h à midi, le dimanche qui précède l'anniversaire de la convention des droits de l'enfant</h4>
@@ -35,7 +35,7 @@
          <div class="comment general item4">
 
             <span class="fa fa-flag"></span>
-            <h2>Comment</h2>
+            <h2>Comment ?</h2>
             <div class="content">
                <h3>UNE COURSE SUR MESURE !</h3>
                <h4>Choisissez votre rythme, marche, petites foulées ou course et votre distance en multipliant à l'envie la boucle de base de 1 km.</h4>

@@ -1,8 +1,8 @@
 #assos_inscriptions {
    text-align: center;
-   background-color: $laggoon;
+   background-color: #fff;
    .title_section {
-		color: #fff;
+		//color: #fff;
 	}
    .inscription:last-child {
       margin-right: 0;
@@ -14,16 +14,27 @@
       background-color: #fff;
       h2 {
          display: inline-block;
-         margin-bottom: 20px;
+         transition: 0.6s ease;
+         margin-bottom: 50px;
          padding: 20px;
-         width: 150px;
-         height: 150px;
-         line-height: 90px;
+         width: 200px;
+         height: 200px;
+         line-height: 150px;
          border-radius: 50%;
          border-width: 10px;
          border-style: solid;
          font-size: 2em;
          border: 7px solid #cdcdcd;
+         text-transform: uppercase;
+   		margin-top: 20px;
+   		font-size: 3.2em;
+   		font-weight: bold;
+   		font-family: 'arual', serif;
+         color: $mainMediumColor;
+      }
+      h2:hover {
+         border: 9px solid $mainMediumColor;
+
       }
       p {
          font-size: 1em;
@@ -42,15 +53,25 @@
       }
    }
    .i1 h2 {
-      color: #fff;
-      background-color: $green;
+      //color: rgba(0, 177, 106, 0.5);
+      border: 9px solid $gray;
    }
    .i2 h2 {
-      color: #fff;
-      background-color: $mainHightColor;
+      //color: rgba(0, 177, 106, 0.7);
+      border: 9px solid $gray;
    }
    .i3 h2 {
-      color: #fff;
-      background-color: $orange;
+      //color: rgba(0, 177, 106, 1);
+      border: 9px solid $gray;
    }
+}
+
+@media screen and (max-width: 44.375em) {
+      .inscription {
+         float: none !important;
+         display: block !important;
+         width: inherit !important;
+         margin-left: 0 !important;
+         text-align: center !important;
+      }
 }

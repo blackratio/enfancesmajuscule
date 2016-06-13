@@ -1,12 +1,15 @@
 #assos_network {
    text-align: center;
    //background-color: $mainHightColor;
-   background-color: $gray;
+   background-color: $laggoon;
    .wrapper_center {
       padding: 40px 0 40px 0;
    }
    span {
       font-size: 3.1em;
+   }
+   a {
+      color: #fff;
    }
    a:hover {
       color: #fff;

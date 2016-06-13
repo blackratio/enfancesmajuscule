@@ -1,5 +1,5 @@
 #assos_contact {
-   background-color: #fff;
+   background-color: $gray;
    text-align: center;
    a {
       text-align: center;
@@ -7,8 +7,33 @@
          font-size: 3em;
       }
    }
-   img {
-      width: 150px;
-      margin-bottom: 20px;
+   .mapadress {
+      width: 48%;
+      img {
+         width: 170px;
+         margin-bottom: 20px;
+      }
    }
+   .contactform {
+      padding: 25px;
+      width: 50%;
+      background-color: #fff;
+   }
+   .wpcf7 {
+      margin-top: 40px;
+      p {
+         text-align: left;
+      }
+
+   }
+}
+
+@media screen and (max-width: 44.375em) {
+      .mapadress, .contactform {
+         float: none !important;
+         display: block !important;
+         width: inherit !important;
+         margin-left: 0 !important;
+         text-align: center !important;
+      }
 }

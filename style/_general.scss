@@ -70,7 +70,7 @@
 			float: left;
 			width: 32%;
 			margin-right: 1%;
-			min-height: 480px;
+			min-height: 380px;
 			.thumb {
 				text-align: center;
 				border: 10px solid #fff;
@@ -126,6 +126,31 @@
 				font-size: 0.6em;
 				font-weight: lighter;
 				text-align: left;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 800px) {
+   .generals .general {
+		display: block !important;
+		float: none !important;
+		width: 100% !important;
+		margin-bottom: 10px;
+		min-height: inherit !important;
+	}
+	.right_infos {
+		display: block !important;
+		float: none !important;
+		width: 100% !important;
+		article {
+			display: block !important;
+			float: none !important;
+			width: 100% !important;
+			margin-bottom: 10px;
+			min-height: inherit !important;
+			a {
+				margin: 0 0 20px 0 !important;
 			}
 		}
 	}

@@ -5,7 +5,7 @@
 	background-size: cover;
 	//background-attachment:fixed;
 	.wrapper_center {
-		padding-top: 150px;
+		padding-top: 80px;
 		max-width: 1000px;
 	}
 	.logo {
@@ -83,5 +83,13 @@
 			color: $laggoon;
 			font-size: 3em;
 		}
+	}
+}
+
+@media screen and (max-width: 44.375em) {
+   .logo, .infos {
+		display: block !important;
+		float: none !important;
+		width: 100% !important;
 	}
 }

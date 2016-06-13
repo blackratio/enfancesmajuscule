@@ -248,7 +248,6 @@
         var map = L.map('map', mapOptions).setView([48.850209, 2.230284], 18);
 
 
-
         //Define an array of Latlng objects (points along the line)
         var polylinePoints = [
             //new L.LatLng(48.850957, 2.231284),

@@ -11,6 +11,12 @@
    img {
       height: 60px;
    }
+   .menu {
+      text-align: right;
+      .item {
+         display: inline-block;
+      }
+   }
    a {
       //font-family: 'Slabo 27px', serif;
       height: 60px;
@@ -20,5 +26,28 @@
    }
    a:hover {
       color: $mainMediumColor;
+   }
+}
+
+@media screen and (max-width: 800px) {
+   #page {
+      width: 100%;
+   }
+   .wrapper_center {
+      max-width: 100% !important;
+   }
+   #main_menu {
+      .left {
+         float: none !important;
+         display: block !important;
+         margin-left: 0 !important;
+
+         img {
+            display: inline-block;
+         }
+      }
+      .menu {
+         display: none;
+      }
    }
 }
