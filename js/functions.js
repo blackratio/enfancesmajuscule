@@ -197,7 +197,7 @@
 
     function initializeClock(id, endtime) {
         var clock = document.getElementById(id);
-        var timeinterval = setInterval(function() {
+        var timeinterval = setTimeout(function() {
             var t = getTimeRemaining(endtime);
             /*clock.innerHTML = 'days: ' + t.days + '<br>' +
 								 'hours: '+ t.hours + '<br>' +
@@ -207,7 +207,7 @@
             if (t.total <= 0) {
                 clearInterval(timeinterval);
             }
-        }, 1000);
+        }, 400);
     }
 
     $(document).ready(function() {
