@@ -52,7 +52,7 @@
 
                      <?php
                      // Start the loop.
-                     while ( have_posts() ) : the_post('posts_per_page=5');
+                     while ( have_posts() ) : the_post('posts_per_page=3');
                      /*
                      * Include the Post-Format-specific template for the content.
                      * If you want to override this in a child theme, then include a file

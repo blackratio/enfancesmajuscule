@@ -17,7 +17,9 @@
  */
 
 get_header(); ?>
-
+<div class="logo_wrapper">
+	<a class="logo_blog" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php bloginfo('template_directory'); ?>/img/logo_course2.png"/></a>
+</div>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 

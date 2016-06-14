@@ -27,9 +27,8 @@
 		<?php if ( is_sticky() && is_home() && ! is_paged() ) : ?>
 			<span class="sticky-post"><?php _e( 'Featured', 'twentysixteen' ); ?></span>
 		<?php endif; ?>
-		<div class="thumb">
-			<?php twentysixteen_post_thumbnail(); ?>
-		</div>
+		<a class="thumb" href="<?php the_permalink(); ?>" style="background-image: url(<?php the_post_thumbnail_url(); ?>)
+"></a>
 		<div class="content">
 			<div class="meta">
 				<?php twentysixteen_entry_meta(); ?>
