@@ -3,6 +3,8 @@
 	text-align: center;
 	background-image: url(img/feature2_bck.png);
 	background-size: cover;
+	
+	background-position: center center;
 	//background-attachment:fixed;
 	.wrapper_center {
 		padding-top: 80px;
@@ -68,7 +70,7 @@
 		padding: 15px 30px;
 		text-align: center;
 		font-weight: lighter;
-		//background-color: #fff;
+		color: #fff;
 		text-transform: uppercase;
 		//color: $mainMediumColor;
 		#clockdiv {
@@ -78,10 +80,9 @@
 			//font-family: 'Pacifico', cursive;
 			//font-family: 'Lato', sans-serif;
 			display: block;
-			margin: 0 8px;
 			//background-color: $mainMediumColor;
-			color: $laggoon;
-			font-size: 3em;
+			color: #fff;
+			font-size: 4em;
 		}
 	}
 }

@@ -3851,11 +3851,65 @@ h5 {
 }
 
 #assos_videos {
+
+	background-attachment:fixed;
 	background-image: url(img/bck2.jpg);
 	background-size: cover;
-	background-attachment:fixed;
+	background-position: center center;
 	text-align: center;
 	color: #fff;
+
+	#triangle-topright {
+		width: 0;
+		height: 0;
+		margin: 50px 0;
+		color: #fff;
+		position: relative;
+		display: block;
+		border-right: 100px solid transparent;
+		border-bottom: 70px solid #fff;
+		border-left: 100px solid transparent;
+		-moz-transform: rotate(35deg);
+		-webkit-transform: rotate(35deg);
+		-ms-transform: rotate(35deg);
+		-o-transform: rotate(35deg);
+		opacity: 0.2;
+	}
+
+	#triangle-topright:before {
+		height: 0;
+		width: 0;
+		position: absolute;
+		display: block;
+		top: -45px;
+		left: -65px;
+		border-bottom: 80px solid #fff;
+		border-left: 30px solid transparent;
+		border-right: 30px solid transparent;
+		content: '';
+		-webkit-transform: rotate(-35deg);
+		-moz-transform: rotate(-35deg);
+		-ms-transform: rotate(-35deg);
+		-o-transform: rotate(-35deg);
+	}
+
+	#triangle-topright:after {
+		content: '';
+		width: 0;
+		height: 0;
+		position: absolute;
+		display: block;
+		top: 3px;
+		left: -105px;
+		color: #fff;
+		border-right: 100px solid transparent;
+		border-bottom: 70px solid #fff;
+		border-left: 100px solid transparent;
+		-webkit-transform: rotate(-70deg);
+		-moz-transform: rotate(-70deg);
+		-ms-transform: rotate(-70deg);
+		-o-transform: rotate(-70deg);
+	}
 }
 #assos_videos iframe {
 	//border: 10px solid rgba(240,240,240, 0.6);
