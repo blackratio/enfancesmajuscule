@@ -33,10 +33,14 @@ gulp.task('test', function() {
 
 gulp.task('sass', function() {
    gulp.src('*.scss')
-      .pipe(sourcemaps.init())
-      .pipe(sass())
-      .pipe(sourcemaps.write())
-      .pipe(gulp.dest(''));
+   .pipe(sourcemaps.init())
+   .pipe(sass())
+   .pipe(postcss([
+      require('autoprefixer')({}),
+      require('cssnano')
+   ]))
+   .pipe(sourcemaps.write())
+   .pipe(gulp.dest(''));
 });
 
 gulp.task("scss-lint", function() {
@@ -77,15 +81,15 @@ gulp.task("scss-lint", function() {
    ];
 
    return gulp.src(
-         ['app/sass/**/*.scss'
-            // Ignore linting vendor assets
-            // Useful if you have bower components
-            //'!app/style/d3.css'
-         ]
-      )
-      .pipe(postcss(processors), {
-         syntax: syntax_scss
-      });
+      ['app/sass/**/*.scss'
+      // Ignore linting vendor assets
+      // Useful if you have bower components
+      //'!app/style/d3.css'
+   ]
+)
+.pipe(postcss(processors), {
+   syntax: syntax_scss
+});
 });
 
 // HTML tasks
@@ -105,12 +109,12 @@ gulp.task('js', function() {
 // BROWSERIFY tasks
 
 /*gulp.task('browserify', function() {
-   return browserify('public/scripts/app.js')
-   .bundle()
-   //Pass desired output filename to vinyl-source-stream
-   .pipe(source('bundle.js'))
-   // Start piping stream to tasks!
-   .pipe(gulp.dest('public/scripts/'));
+return browserify('public/scripts/app.js')
+.bundle()
+//Pass desired output filename to vinyl-source-stream
+.pipe(source('bundle.js'))
+// Start piping stream to tasks!
+.pipe(gulp.dest('public/scripts/'));
 });*/
 
 ////////////////////////////////////////
@@ -121,15 +125,15 @@ gulp.task('js', function() {
 
 gulp.task('compress', function() {
    return gulp.src('app/js/**/*.js')
-      .pipe(concat('allScript.js'))
-      .pipe(uglify())
-      .pipe(gulp.dest('app/dist/js/'));
+   .pipe(concat('allScript.js'))
+   .pipe(uglify())
+   .pipe(gulp.dest('app/dist/js/'));
 });
 
 
 gulp.task('sassdoc', function() {
    return gulp.src('app/sass/**/*.scss')
-      .pipe(sassdoc());
+   .pipe(sassdoc());
 });
 
 ////////////////////////////////////////
@@ -141,7 +145,7 @@ gulp.task('sassdoc', function() {
 gulp.task('dev', function() {
    browserSync.init({
       //server: "./index.php"
-      proxy: "localhost:8888/enfance",
+      proxy: "localhost:8888/wordpress",
       injectChanges: true,
       port: 3005,
    });

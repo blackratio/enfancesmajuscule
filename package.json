@@ -3,7 +3,9 @@
   "main": "app/app.js",
   "dependencies": {},
   "devDependencies": {
+    "autoprefixer": "^6.3.6",
     "browser-sync": "latest",
+    "cssnano": "^3.7.1",
     "eslint-config-google": "^0.5.0",
     "gulp": "^3.9.1",
     "gulp-babel": "latest",
